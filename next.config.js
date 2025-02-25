@@ -1,15 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  reactStrictMode: true,
   images: {
     unoptimized: true,
-    domains: ['images.unsplash.com'],
   },
+  basePath: '/madaq-aljouf',
+  assetPrefix: '/madaq-aljouf/',
   trailingSlash: true,
-  experimental: {
-    optimizeCss: true,
-  },
 }
 
 module.exports = nextConfig
